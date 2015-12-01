@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+      <!--<view-state id="main"/>-->
+      <view-state id="home1" view="home">
+            <transition on="personPage" to="person"/>
+      </view-state>
+
+      <view-state id="person" view="person">
+            <transition on="homePage" to="home1"/>
+      </view-state>
+
+      <!--<view-state id="main" view="main">-->
+            <!--<transition on="homePage" to="home"/>-->
+            <!--<transition on="cancelPage" to="cancel"/>-->
+      <!--</view-state>-->
+      <!--<end-state id="cancel" view="cancel"></end-state>-->
+</flow>
